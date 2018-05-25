@@ -1,6 +1,4 @@
 #!/bin/bash
-TERM=linux
-export TERM
 
 set -e
 
