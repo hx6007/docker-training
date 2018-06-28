@@ -23,3 +23,5 @@ EXPOSE 3306
 VOLUME ["/var/lib/mysql"]
 
 ENTRYPOINT ["/scripts/start"]
+
+# docker run -d -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=csphere2015  -v /var/lib/docker/vfs/dir/mydata:/var/lib/mysql csphere/mysql:5.5
