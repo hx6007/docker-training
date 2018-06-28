@@ -29,3 +29,6 @@ ADD	supervisor_php-fpm.conf /etc/supervisor.conf.d/php-fpm.conf
 
 ONBUILD ADD . /app
 ONBUILD RUN chown -R nginx:nginx /app
+
+# docker build -t csphere/php-fpm:5.4 .
+# docker run -d -p 8080:80 --name website csphere/php-fpm:5.4
